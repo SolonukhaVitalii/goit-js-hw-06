@@ -22,8 +22,7 @@ function getNum ({num}) { return num; }
 console.log(getNum(object)) // 2*/
 
 // Write code under this line
-const getUserNames = array => array;
-const userNames = users.map(({name}) => ({name}));
+const getUserNames = array => array.map(({ name }) => name);
 
 console.log(getUserNames(users));
 
