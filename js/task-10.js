@@ -3,6 +3,7 @@
 
 Слияние массивов:*/
 
-const getSortedUniqueSkills = (array) => array.reduce((acc, item) => acc.includes(item) ? acc : [...acc, item], []).sort().filter((current, index, arr) => arr.indexOf(current) === index);
+// Write code under this line
+const getSortedUniqueSkills = (array) => array.reduce((acc, item) => [...acc, ...item.skills], []).filter((current, index, arr) => arr.indexOf(current) === index).sort();
 
 console.log(getSortedUniqueSkills(users));
